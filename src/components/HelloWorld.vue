@@ -32,7 +32,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .top{
-    margin-top: 8rem;
     height: 6rem;
 }
 h1{
@@ -50,6 +49,7 @@ h1{
 .p_height{
   height: 1px;
 }
-.images{
+.top{
+  padding-top: 55%;
 }
 </style>
