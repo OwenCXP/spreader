@@ -1,13 +1,18 @@
 <template>
-  <div id="app">
-    <img src="">
+  <div id="app" :style="{minHeight: getScreenHeight() + 'px'}">
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    getScreenHeight () {
+      let height = window.innerHeight
+      return height
+    }
+  }
 }
 </script>
 
@@ -21,6 +26,9 @@ export default {
   background: #f5a400;
   height: 100%;
   font-size: 35px;
-  min-height: 550px;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
 </style>
